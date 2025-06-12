@@ -20,7 +20,7 @@ body {
 .container {
     width: 100%;
     max-width: 1024px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 div.btn1 {
@@ -81,6 +81,9 @@ p {
 
 /* ===== HEADER ===== */
 /*NAVEGAÇÃO*/
+header{
+    margin-bottom: 100px;
+}
 header .container .navbar {
     display: flex;
 }
@@ -94,7 +97,7 @@ header .container .navbar .logo {
 header .container .navbar .desktop {
     order: 2;
     flex-grow: 11;
-    padding: 10px 2%;
+    padding: 10px 10%;
 }
 
 header .container .navbar ul {
@@ -113,7 +116,8 @@ header .container .navbar ul li a {
 }
 
 header .container .navbar ul div {
-    margin-left: 15%;
+    float: right;
+    margin-top: 30px;
 }
 
 header .container .navbar ul li a:hover {
@@ -138,38 +142,251 @@ header .container .buttons {
     text-align: center;
 }
 
-header .container .buttons div{
+header .container .buttons div {
     padding: 0 3%;
 }
 
-header .container .screens img{
+header .container .screens img {
     width: 100%;
     height: 100%;
 }
+
 /* ===== FEATURES ===== */
 /*heading*/
-section.features .heading{
+section.features{
+    margin-bottom: 100px;
+}
+section.features .heading {
     display: block;
     max-width: 500px;
     margin: 5% auto;
     text-align: center;
 }
-section.features .feature-content{
+
+section.features .feature-content {
     display: flex;
 }
+
 /*Feature Content*/
-section .feature-content > img{
+section .feature-content>img {
     max-width: 750px;
 }
-section .content-wraper{
+
+section .content-wraper {
     margin-top: 110px;
 }
-section .feature-content .content-single-title{
+
+section .feature-content .content-single-title {
     display: flex;
     margin-top: 15%;
 }
-.content-single-title img{
+
+.content-single-title img {
     width: 20px;
     height: auto;
     margin-right: 10px;
+}
+
+/* ===== CONTENTS ===== */
+/*Content Text*/
+section.contents .content-text{
+    display: block;
+    max-width: 500px;
+    margin: 5% auto;
+    text-align: center;
+}
+
+/*Content card*/
+section.content{
+    margin-bottom: 100px;
+}
+section.contents .contents-card{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-single{
+    margin: 0 2%;
+    text-align: center;
+    max-height: 650px;
+    background-color: white;
+}
+
+.card-single .card-text{
+    padding: 8% 2%;
+}
+
+section.contents .card-text h4,
+section.contents .card-text p{
+    color: black;
+}
+
+.card-single .img-card{
+    margin-top: 5%;
+}
+
+.card-single .img-card img{
+    width: 70%;
+    bottom: 0;
+}
+
+/* ===== Gallery ===== */
+section.gallery .gallery-text{
+    display: block;
+    max-width: 500px;
+    margin: 5% auto;
+    text-align: center;
+}
+/*Galeria*/
+section.gallery .gallery-card1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-card1 img{
+    width: 25%;
+    height: auto;
+    object-fit: contain;
+}
+
+section.gallery .gallery-card2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-card2 img{
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+}
+.gallery-card2 img:nth-child(2){
+    width: 20%;
+    height: auto;
+    object-fit: contain;
+}
+section.gallery .btn1{
+    display: block;
+    max-width: 500px;
+    margin: 5% auto;
+    text-align: center;
+}
+/*PARTNERS*/
+section.partners .partners-text{
+    display: block;
+    max-width: 500px;
+    margin: 5% auto;
+    text-align: center;
+}
+section.partners .partners-logo{
+    display: block;
+    max-width: 1024px;
+    margin: 5% auto;
+    text-align: center;
+}
+section.partners .partners-logo img{
+    padding: 0 3%;
+    width: 100px;
+}
+section.partners .btn1{
+    display: block;
+    max-width: 500px;
+    margin: 5% auto;
+    text-align: center;
+}
+/*TESTIMONIALS*/
+section.testimonials .testimonials-text{
+    display: block;
+    max-width: 500px;
+    margin: 5% auto;
+    text-align: center;
+}
+section.testimonials .testimonial-wraper {
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testimonial-card .testimonial-single{
+    border: 1px solid #fff;
+    margin: 10% 5%;
+    padding: 5% 5%;
+    border-radius: 10px;
+    max-width: 328px; 
+}
+
+.testimonial-single .card-title{
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.card-title .avatar{
+    width: 60px;
+    height: 60px;
+    margin-right: 5%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.card-text{
+    line-height: 25px;
+}
+.avatar img{
+    width: 100%;
+}
+/*CTA*/
+section.cta .container{
+    display: flex;
+    flex-direction: row;
+    background-color: #363535;
+    border-radius: 30px;
+}
+section.cta .cta-left{
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 4%;
+}
+section.cta .cta-left .btn2{
+    margin-top: 8%;
+}
+section.cta .cta-right img{
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0 0 30px 0;
+    margin-right: 5px;
+}
+/*FOOTER*/
+footer{
+    margin: 5% 5%;
+}
+footer .footer-nav{
+    float: left;
+}
+.footer-nav ul{
+    list-style-type: none;
+    margin-top: 30px;
+}
+footer .footer-nav ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+footer .footer-nav li a{
+    text-decoration: none;
+}
+footer .footer-nav li a:hover{
+    color: #c8d7e6;
+    border-bottom: 1px solid #c8d7e6;
+}
+footer .footer-about{
+    float: right;
+}
+.footer-about .addres,
+.footer-about .phone{
+    padding: 10px 2%;
+}
+.footer-about .social{
+    padding: 10px;
 }
