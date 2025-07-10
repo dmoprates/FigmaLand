@@ -169,6 +169,7 @@ section.features .feature-content {
 
 /*Feature Content*/
 section .feature-content>img {
+    width: 100%;
     max-width: 750px;
 }
 
